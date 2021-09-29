@@ -22,27 +22,27 @@ namespace CalculatorWindowsFormApp
 
         }
 
-        private int Penambahan(int a, int b)
+        private double Penambahan(double a, double b)
         {
             return a + b;
         }
-        private int Pengurangan(int a, int b)
+        private double Pengurangan(double a, double b)
         {
             return a - b;
         }
-        private int Perkalian(int a, int b)
+        private double Perkalian(double a, double b)
         {
             return a * b;
         }
-        private int Pembagian(int a, int b)
+        private double Pembagian(double a, double b)
         {
             return a / b;
         }
 
         private void btnHasil_Click(object sender, EventArgs e)
         {
-            var a = int.Parse(txtNilaiA.Text);
-            var b = Convert.ToInt32(txtNilaiB.Text);
+            double a = double.Parse(txtNilaiA.Text);
+            double b = Convert.ToDouble(txtNilaiB.Text);
 
             lstHasil.Items.Clear();
 

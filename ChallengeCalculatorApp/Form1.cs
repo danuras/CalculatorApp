@@ -17,19 +17,19 @@ namespace ChallengeCalculatorApp
             InitializeComponent();
         }
 
-        private int Penambahan(int a, int b)
+        private double Penambahan(double a, double b)
         {
             return a + b;
         }
-        private int Pengurangan(int a, int b)
+        private double Pengurangan(double a, double b)
         {
             return a - b;
         }
-        private int Perkalian(int a, int b)
+        private double Perkalian(double a, double b)
         {
             return a * b;
         }
-        private int Pembagian(int a, int b)
+        private double Pembagian(double a, double b)
         {
             return a / b;
         }
@@ -51,8 +51,8 @@ namespace ChallengeCalculatorApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var a = int.Parse(txtNilaiA.Text);
-            var b = int.Parse(txtNilaiB.Text);
+            double a = double.Parse(txtNilaiA.Text);
+            double b = double.Parse(txtNilaiB.Text);
 
 
             int idx = comboBoxOperasi.SelectedIndex;
